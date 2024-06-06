@@ -1,14 +1,14 @@
-import Recipe, {RecipeResults} from "../../types/Recipe/recipe-type";
-import {getRecipeById,getAllRecipeWithIds} from "../../lib/Recipe/recipe-lib";
+import Recipe, {RecipeResults} from "../types/Recipe/recipe-type";
+import {getRecipeById,getAllRecipeWithIds} from "../lib/Recipe/recipe-lib";
 import stylesHp from '../../styles/Homepage/Homepage.module.css';
 import Head from 'next/head'
-import {getHomepageById} from "../../lib/Homepage/homepage-lib";
-import { HOMEPAGE_ID } from "../../lib/Common/constants";
-import Homepage from "../../types/Homepage/homepage-type";
-import HeaderComponent from "../../components/Homepage/header-component";
-import FooterComponent from "../../components/Homepage/footer-component";
-import HeroBanner from "../../components/Homepage/hero-banner";
-import RichText from "../../components/Common/richText-component";
+import {getHomepageById} from "../lib/Homepage/homepage-lib";
+import { HOMEPAGE_ID } from "../lib/Common/constants";
+import Homepage from "../types/Homepage/homepage-type";
+import HeaderComponent from "./Homepage/header-component";
+import FooterComponent from "./Homepage/footer-component";
+import HeroBanner from "./Homepage/hero-banner";
+import RichText from "./Common/richText-component";
 
 const Renderer = require("prosemirror-to-html-js").Renderer;
 
