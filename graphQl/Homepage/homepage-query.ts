@@ -1,3 +1,4 @@
+import PROMO_QUERY from "../Common/blanko-promo-type";
 import MEDIA_QUERY from "../Common/media-query";
 import { RECIPE_QUERY } from "../Recipe/recipe-query";
 import { FOOTER_QUERY } from "./footer-query";
@@ -38,6 +39,17 @@ export const HOMEPAGE_QUERY = `
   }
   recipeTitle
   recipeSectionText
+
+  blankoPromo {
+    total
+    results {
+      __typename
+      ... on BlankoPromo {
+        ${PROMO_QUERY}
+      }
+    }
+  }
+
   recipes {
     total
     results {
@@ -48,6 +60,7 @@ export const HOMEPAGE_QUERY = `
     }
     
   }
+
   footer {
     total
     results {
